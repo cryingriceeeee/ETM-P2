@@ -1,9 +1,8 @@
 import cv2 # imports opencv packages
 
-
 cap = cv2.VideoCapture(0) # stores camera input as a variable
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280) # sets frame width to 1280 pixels
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 780) # sets frame height to 780 pixels
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640) # sets frame width to 1280 pixels
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480) # sets frame height to 780 pixels
 
 while True: # infinite loop
     _, frame = cap.read() # activates camera 
@@ -14,10 +13,8 @@ while True: # infinite loop
     cx = int(width / 2) # finds center x coordinates
     cy = int(height / 2) # finds center y coordinates
     
-    cyhalf = cy / 2
-    cyup = int(cy + cyhalf) 
-    cydown = int(cy - cyhalf)
-
+    cyup = int(cy + int(cy / 2)) 
+    cydown = int(cy - int(cy / 2)) 
 
     up = frame[cx, cyup]
     down = frame[cx, cydown]
@@ -25,8 +22,7 @@ while True: # infinite loop
     uphue_value = up[0] 
     downhue_value = down[0] 
 
-
-    upcolor = "Undefined" # initializes color variable
+    upcolor = "Undefined" # initializes color variable for up dot
     if uphue_value < 5:
         upcolor = "Red"
     elif uphue_value < 22:
@@ -40,9 +36,9 @@ while True: # infinite loop
     elif uphue_value < 170:
         upcolor = "Violet"
     else:
-        upcolor = "Red"
+        upcolor = "White"
 
-    downcolor = "Undefined" # initializes color variable
+    downcolor = "Undefined" # initializes color variable for down dot
     if downhue_value < 5:
         downcolor = "Red"
     elif downhue_value < 22:
@@ -56,7 +52,7 @@ while True: # infinite loop
     elif downhue_value < 170:
         downcolor = "Violet"
     else:
-        downcolor = "Red"
+        downcolor = "White"
 
     print(up) 
     print(down) 
