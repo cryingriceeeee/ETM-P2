@@ -1,1 +1,1 @@
-color recognition + wado sanzo matching
+color recognition + wado sanzo color matching
