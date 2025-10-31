@@ -20,4 +20,3 @@ for corner in corners:
 cv2.imshow('Frame', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
