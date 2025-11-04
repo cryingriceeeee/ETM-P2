@@ -1,240 +1,27 @@
-[
-  {
-    "name": "Hermosa Pink",
-    "combinations": [],
-    "rgb": [
-      249,
-      193,
-      206
-    ]
-  },
-  {
-    "name": "Fresh Color",
-    "combinations": [],
-    "rgb": [
-      246,
-      145,
-      126
-    ]
-  },
-  {
-    "name": "Eugenia Red",
-    "combinations": [
-      17
-    ],
-    "rgb": [
-      218,
-      82,
-      93
-    ]
-  },
-  {
-    "name": "Etruscan Red",
-    "combinations": [],
-    "rgb": [
-      197,
-      83,
-      71
-    ]
-  },
-  {
-    "name": "Rosolanc Purple",
-    "combinations": [],
-    "rgb": [
-      183,
-      63,
-      116
-    ]
-  },
-  {
-    "name": "Red",
-    "combinations": [],
-    "rgb": [
-      167,
-      33,
-      68
-    ]
-  },
-  {
-    "name": "Violet Red",
-    "combinations": [
-      9
-    ],
-    "rgb": [
-      100,
-      45,
-      94
-    ]
-  },
-  {
-    "name": "Seashell Pink",
-    "combinations": [],
-    "rgb": [
-      253,
-      212,
-      189
-    ]
-  },
-  {
-    "name": "Vinaceous Cinnamon",
-    "combinations": [],
-    "rgb": [
-      238,
-      167,
-      140
-    ]
-  },
-  {
-    "name": "Yellow",
-    "combinations": [
-      22
-    ],
-    "rgb": [
-      255,
-      242,
-      0
-    ]
-  },
-  {
-    "name": "Orange Yellow",
-    "combinations": [],
-    "rgb": [
-      252,
-      179,
-      21
-    ]
-  },
-  {
-    "name": "Cinnamon Rufous",
-    "combinations": [
-      8,
-      10
-    ],
-    "rgb": [
-      194,
-      117,
-      68
-    ]
-  },
-  {
-    "name": "Buffy Citrine",
-    "combinations": [],
-    "rgb": [
-      150,
-      135,
-      77
-    ]
-  },
-  {
-    "name": "Sudan Brown",
-    "combinations": [],
-    "rgb": [
-      163,
-      103,
-      82
-    ]
-  },
-  {
-    "name": "Madder Brown",
-    "combinations": [],
-    "rgb": [
-      118,
-      44,
-      25
-    ]
-  },
-  {
-    "name": "Yellow Green",
-    "combinations": [],
-    "rgb": [
-      175,
-      212,
-      114
-    ]
-  },
-  {
-    "name": "Rainette Green",
-    "combinations": [],
-    "rgb": [
-      143,
-      160,
-      113
-    ]
-  },
-  {
-    "name": "Green",
-    "combinations": [],
-    "rgb": [
-      72,
-      155,
-      110
-    ]
-  },
-  {
-    "name": "Blackish Olive",
-    "combinations": [],
-    "rgb": [
-      66,
-      83,
-      62
-    ]
-  },
-  {
-    "name": "Cobalt Green",
-    "combinations": [],
-    "rgb": [
-      150,
-      209,
-      170
-    ]
-  },
-  {
-    "name": "Olympic Blue",
-    "combinations": [],
-    "rgb": [
-      90,
-      130,
-      179
-    ]
-  },
-  {
-    "name": "Deep Lyons Blue",
-    "combinations": [
-      22
-    ],
-    "rgb": [
-      28,
-      66,
-      134
-    ]
-  },
-  {
-    "name": "Deep Slate Green",
-    "combinations": [],
-    "rgb": [
-      17,
-      47,
-      44
-    ]
-  },
-  {
-    "name": "Light Mauve",
-    "combinations": [
-      23
-    ],
-    "rgb": [
-      154,
-      114,
-      170
-    ]
-  },
-  {
-    "name": "Deep Violet / Plumbeous",
-    "combinations": [],
-    "rgb": [
-      112,
-      114,
-      124
-    ]
-  }
-]
+[ {"name":"Hermosa Pink","combinations":[8,27],"rgb":[249,193,206]}, 
+  {"name":"Fresh Color","combinations":[],"rgb":[246,145,126]},
+  {"name":"Eugenia Red","combinations":[17],"rgb":[218,82,93]},
+  {"name":"Etruscan Red","combinations":[],"rgb":[197,83,71]},
+  {"name":"Rosolanc Purple","combinations":[],"rgb":[183,63,116]},
+  {"name":"Red","combinations":[],"rgb":[167,33,68]},
+  {"name":"Violet Red","combinations":[9],"rgb":[100,45,94]},
+  {"name":"Seashell Pink","combinations":[1],"rgb":[253,212,189]},
+  {"name":"Vinaceous Cinnamon","combinations":[],"rgb":[238,167,140]},
+  {"name":"Yellow","combinations":[22],"rgb":[255,242,0]},
+  {"name":"Orange Yellow","combinations": [],"rgb":[252,179,21]},
+  {"name":"Cinnamon Rufous","combinations":[8,10],"rgb":[194,117,68]},
+  {"name":"Buffy Citrine","combinations":[],"rgb":[150,135,77]},
+  {"name":"Sudan Brown","combinations": [],"rgb":[163,103,82]},
+  {"name":"Madder Brown","combinations":[],"rgb":[118,44,25]},
+  {"name":"Yellow Green","combinations":[],"rgb":[175,212,114]},
+  {"name":"Rainette Green","combinations":[],"rgb":[143,160,113]},
+  {"name":"Green","combinations":[],"rgb":[72,155,110]},
+  {"name":"Blackish Olive","combinations":[],"rgb":[66,83,62]},
+  {"name":"Cobalt Green","combinations":[],"rgb":[150,209,170]},
+  {"name":"Olympic Blue","combinations":[],"rgb":[90,130,179]},
+  {"name":"Deep Lyons Blue","combinations":[],"rgb":[28,66,134]},
+  {"name":"Deep Slate Green","combinations":[],"rgb":[17,47,44]},
+  {"name":"Light Mauve","combinations":[23],"rgb":[154,114,170]},
+  {"name":"Deep Violet","combinations":[26],"rgb":[112,114,124]},
+  {"name":"Red Violet","combinations":[25],"rgb":[89,37,106]},
+  {"name":"Neutral Grey","combinations":[],"rgb":[182,191,193]} ]
