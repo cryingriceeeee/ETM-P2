@@ -1,6 +1,0 @@
-opencv
-    take picture from webcam frame
-
-json
-    learn how to access information within json file
-    learn data algorithms and choose best one to search specific info

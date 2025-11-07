@@ -1,34 +1,13 @@
 import simplejson as json
 
-while True:
-    r = int(input("Enter a red value (0-255): "))
-    if r < 0 or r > 255:
-        print("Invalid value entered. Please try again.")
-    else:
-        break
-while True:
-    g = int(input("Enter a green value (0-255): "))
-    if g < 0 or g > 255:
-        print("Invalid value entered. Please try again.")
-    else:
-        break
-
-while True:
-    b = int(input("Enter a blue value (0-255): "))
-    if b < 0 or b > 255:
-        print("Invalid value entered. Please try again.")
-    else:
-        break
-
-color_data = {'r': r, 'g': g, 'b': b}
-print(color_data)
+r, g ,b = 255, 121, 12
 
 matched_color = 'Unknown'
 
 with open('colors.json', 'r') as file:
     data = json.load(file)
 for color in data:
-    rgb = color['rgb']
+    rgb = color['rgb_array']
     placeholder_r = 0
     placeholder_g = 0
     placeholder_b = 0
