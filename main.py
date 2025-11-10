@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import simplejson as json
-# import time
+import time
 import random
 
 cap = cv2.VideoCapture(0)
@@ -14,8 +14,8 @@ with open("colors.json", "r") as file:
 colors = data["colors"]
 length = len(colors)
 
-# last_update_time = 0
-# update_interval = 1  
+last_update_time = 0
+update_interval = 1  
 upper_color = None
 lower_color = None  
 
@@ -75,18 +75,18 @@ while True:
     cv2.rectangle(frame, ((width ),30), ((width - 250),60), (255,255,255), -1)
     cv2.rectangle(frame, ((width),330), ((width - 250),360), (255,255,255), -1)
     
-    # current_time = time.time()
-    # if current_time - last_update_time >= update_interval:
-    #     upper_color = colors[suisei_wa(ur, ug, ub)]
-    #     lower_color = colors[suisei_wa(lr, lg, lb)]
-    #     umc = colors[kyou_mo_kawaii(suisei_wa(ur, ug, ub))]
-    #     lmc = colors[kyou_mo_kawaii(suisei_wa(lr, lg, lb))]
-    #     last_update_time = current_time
+    current_time = time.time()
+    if current_time - last_update_time >= update_interval:
+        upper_color = colors[suisei_wa(ur, ug, ub)]
+        lower_color = colors[suisei_wa(lr, lg, lb)]
+        umc = colors[kyou_mo_kawaii(suisei_wa(ur, ug, ub))]
+        lmc = colors[kyou_mo_kawaii(suisei_wa(lr, lg, lb))]
+        last_update_time = current_time
     
-    upper_color = colors[suisei_wa(ur, ug, ub)]
-    lower_color = colors[suisei_wa(lr, lg, lb)]
-    umc = colors[kyou_mo_kawaii(suisei_wa(ur, ug, ub))]
-    lmc = colors[kyou_mo_kawaii(suisei_wa(lr, lg, lb))]
+    # upper_color = colors[suisei_wa(ur, ug, ub)]
+    # lower_color = colors[suisei_wa(lr, lg, lb)]
+    # umc = colors[kyou_mo_kawaii(suisei_wa(ur, ug, ub))]
+    # lmc = colors[kyou_mo_kawaii(suisei_wa(lr, lg, lb))]
 
     upper_color_b = upper_color['rgb_array'][2]
     upper_color_g = upper_color['rgb_array'][1]
