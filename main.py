@@ -59,6 +59,7 @@ while True:
     height, width, _ = frame.shape
 
     cx = int(width/2)
+    cy = int(height/2)
 
     upper_frame = frame[50,cx]
     lower_frame = frame[350,cx]
@@ -72,7 +73,13 @@ while True:
     cv2.circle(frame, (cx,350), 5, (255,225,225), 3)
     cv2.rectangle(frame, (0,30), (230,60), (255,255,255), -1)
     cv2.rectangle(frame, (0,330), (230,360), (255,255,255), -1)
-    cv2.rectangle(frame, ((width ),30), ((width - 250),60), (255,255,255), -1)
+
+
+    cv2.rectangle(frame, (0,cy-100), (230,cy+25), (0,255,255), -1)
+    cv2.rectangle(frame, (width,cy-100), ((width - 250),cy+25), (0,255,255), -1)
+
+
+    cv2.rectangle(frame, ((width),30), ((width - 250),60), (255,255,255), -1)
     cv2.rectangle(frame, ((width),330), ((width - 250),360), (255,255,255), -1)
     
     current_time = time.time()
@@ -108,6 +115,10 @@ while True:
     cv2.putText(frame, lower_color['name'], (10,350), 0, 0.5, (lower_color_b,lower_color_g,lower_color_r), 2)
     cv2.putText(frame, umc['name'], (cx + 70,50), 0, 0.5, (umcb,umcg,umcr), 2)
     cv2.putText(frame, lmc['name'], (cx + 70,350), 0, 0.5, (lmcb,lmcg,lmcr), 2)
+
+    cv2.putText(frame, "Detected Color", (50,cy), 0, 0.5, (0,0,0), 2)
+
+    cv2.putText(frame, "Suggested Matching Color", ((width - 200),cy), 0, 0.5, (0,0,0), 2)
 
     cv2.imshow('Color Recognizer', frame)
     key = cv2.waitKey(1)
